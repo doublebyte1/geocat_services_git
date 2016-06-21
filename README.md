@@ -34,8 +34,7 @@ https://docs.docker.com/compose/install/
 Note that if you are a non-Linux user, you will need to install docker-machine in addition to docker and compose.
 You may check the requirements section first. After that, to build and run the system for the first time you want to go to the root directory and type:
 
-_curl https://raw.githubusercontent.com/doublebyte1/geocat_services_git/master/docker-compose.yml \
-    | docker-compose -f - up -d_
+_curl https://raw.githubusercontent.com/doublebyte1/geocat_services_git/master/docker-compose.yml | docker-compose -f - up -d_
 
 You can stop the system, just by typing:
 
