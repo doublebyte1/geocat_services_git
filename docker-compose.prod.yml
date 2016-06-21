@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+    sftp:
+        restart: always
+
+    data:
+        restart: always
+        ports:
+            - "9102:9102"
+
+    newrelic_sysmond:
+        restart: always
+

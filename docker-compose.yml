@@ -1,0 +1,29 @@
+#TODO export $gitlab_user, $gitlab_pass and $RSYSMOND_license_key environment variables
+
+version: '2'
+services:
+
+    sftp:
+        image: atmoz/sftp
+        ports:
+          - "2222:22"
+        volumes_from:
+          - data
+        command: admin:somepass:1001
+
+    data:
+        build: https://$gitlab_user:$gitlab_pass@eos.geocat.net/gitlab/joana.simoes/geocat_services.git#master:geocat_data
+
+    newrelic_sysmond:
+        image: doublebyte/newrelic_sysmond
+        privileged: true
+        volumes:
+         - "/var/run/docker.sock:/var/run/docker.sock"
+         - "/dev:/dev"
+         - "/sys:/sys"
+        environment:
+         - RSYSMOND_license_key
+        pid: host
+        network_mode: host
+
+
