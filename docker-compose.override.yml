@@ -1,9 +1,0 @@
-version: '2'
-services:
-
-    data:
-        ports:
-            - "9103:9102"
-        volumes:
-            - /host/share:/home/admin/share
-
