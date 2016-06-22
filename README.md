@@ -11,8 +11,12 @@
 
 GENERAL INFORMATION
 ============
-This is a minimal version of Geocat Services (development only), meant to be run from the command line, without installing anything.
+This is a minimal version of Geocat Services (development only), meant to be run from the command line, without installing anything. The shipped services are:
 
+* SFTP server
+* Apt-Mirror [future development]
+* Docker Registry [future development]
+* Jenkins/SSL [disabled]
 
 AUTHORS
 =======
