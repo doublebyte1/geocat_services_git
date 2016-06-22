@@ -72,18 +72,6 @@ For instance:
  
 The files placed on the folder /share will be read by the docker images.
  
-If you want to use the backup client for jobs, you need to register the host on a bacula-server. We currently have some backup jobs configured on bacula-dir, running on helios.
-You can read more about configuring and using this bacula-server instance, on this link:
-
-https://eos.geocat.net/redmine/projects/live/wiki/Dockerized_Live#Backups
-
-If you want to monitor the system, you will need a NewRelic key. Please sign up for a free account, to obtain a [license key](https://newrelic.com/signup). The docker images read the license key from an environmental variable, _NRSYSMOND_license_key_. To replace this key, please edit _common.env_, on the root of this folder, and replace the key value for your key.
-After this, you will need to re-create the containers. Please read on, in order to to that.
-
-You can read more about the monitoring system in place, on this link:
-
-https://eos.geocat.net/redmine/projects/live/wiki/Dockerized_Live#Monitoring
-
 Recreating Containers
 =====================
 
