@@ -12,7 +12,7 @@ services:
         command: admin:somepass:1001
 
     data:
-        build: https://$gitlab_user:$gitlab_pass@eos.geocat.net/gitlab/joana.simoes/geocat_services.git#master:geocat_data
+        build: https://$gitlab_user:$gitlab_pass@eos.geocat.net/gitlab/live/geocat_services.git#master:geocat_data
         ports:
             - "9103:9102"
         volumes:
